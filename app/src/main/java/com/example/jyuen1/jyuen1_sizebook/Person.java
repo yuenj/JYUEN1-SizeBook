@@ -183,7 +183,7 @@ public class Person {
             throw new InvalidDimensionException("Please enter a hip dimension between 33\" and 70.5\"");
         } else if (this.hip != null){
             this.hip.setNum(hip);
-            this.waist.setHalf(halfInch);
+            this.hip.setHalf(halfInch);
         } else
             this.hip = new HalfDimension(hip, halfInch);
     }
